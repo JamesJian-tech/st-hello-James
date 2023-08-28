@@ -12,18 +12,15 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Doe"
+PAGE_TITLE = "Digital CV | James Jian"
 PAGE_ICON = ":wave:"
-NAME = "John Doe"
+NAME = "James Jian"
 DESCRIPTION = """
 Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "jiahowjian@email.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/codingisfun",
     "LinkedIn": "https://linkedin.com",
-    "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
 }
 PROJECTS = {
     "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
@@ -41,13 +38,14 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-profile_pic = Image.open(profile_pic)
+# profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=230)
+    pass
+    # st.image(profile_pic, width=230)
 
 with col2:
     st.title(NAME)
